@@ -23,9 +23,11 @@ public class MainActivity extends Activity {
 		birds.add(new StateBird("American Robin", "Michigan"));
 		birds.add(new StateBird("Chickadee", "Massachusetts"));
 
-		ArrayAdapter<StateBird> adapter = new ArrayAdapter<StateBird>(this,
-				android.R.layout.simple_list_item_1, birds);
+//		ArrayAdapter<StateBird> adapter = new ArrayAdapter<StateBird>(this,
+//				android.R.layout.simple_list_item_1, birds);
 
+		BirdAdapter adapter = new BirdAdapter(this, birds);
+		
 		ListView listView = (ListView) findViewById(R.id.list_view);
 		listView.setAdapter(adapter);
 	}
