@@ -6,14 +6,6 @@
     android:paddingLeft="10dp"
     android:paddingRight="15dp" >
 
-    <Button
-        android:id="@+id/add_view_button"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="@string/activity_main_button_add"  >            
-    </Button>
-
     <ListView
         android:id="@+id/list_view"
         android:layout_width="fill_parent"
